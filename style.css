@@ -5,14 +5,17 @@
     margin: 0;
 }
 
+*{box-sizing: border-box;}
+
 body {
     background-color: #8ccef5;
 }
 
 .wraper {
     background-color: #e8fc90;
-    width: 1070Px;
-    padding-bottom: 15px;
+    width: 1058Px;
+    height: 625px;
+    /* padding-bottom: 15px; */
     margin: 0 auto;
 }
 
@@ -71,13 +74,12 @@ caption {
 .block-btn {
     display:flex; 
     justify-content:right;
-    /* margin-right: 10px; */
 }
 
 /*  END Список книг таблица table_list_books  */
 
 /* Таблица добавления книги add_table */
-.btn-add {
+.btn-list {
     font-size: 20px;
     background-color: #69a8bb;
     color: #ffffff;
@@ -90,3 +92,107 @@ caption {
 }
 
 /* END Таблица добавления книги add_table */
+
+
+
+.h-first-window {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.header-first-window {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #9F9F9F;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  /* border-left: 1px solid black; */
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  padding: 15px 40px;
+  font-size: 18px;
+  color: #FEFDFD;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.active, 
+.submenu a:hover {color: #ddbe86;}
+.topmenu .fa, 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;  
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ========================================== */
+
+.btn-first-window {
+    font-size: 18px;
+    background-color: #b1b0b0;
+    color: #ffffff;
+    padding: 7px 26px;
+    border-radius: 5px;
+    /* border: 2px solid #fff; */
+    border: none;
+    margin-right: 30px;
+}
+
+/* ============================================== */
+
+.img-first-window img {
+  margin-top: 10px;
+}
