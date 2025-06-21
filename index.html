@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашний Кинотеатр</title>
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="main-top">
+            <div class="logo">
+                
+                <i class="fa-solid fa-film"></i> <a href="/">MDK</a>
+            </div>
+            <div class="menu-toggle">
+                ☰
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu-item"><a href="/">Главная</a></li>
+                    <li class="main-menu-item"><a href="#">Фильмы</a></li>
+                    <li class="main-menu-item"><a href="#">Сериалы</a></li>
+                    <li class="main-menu-item"><a href="#">Жанры</a></li>
+                    <li class="main-menu-item"><a href="#">Поиск</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header>
+            <section class="hero">
+                <img src="/images/kino-5.jpg" alt="Постер фильма" class="hero-image">
+                <div class="hero-content">
+                    <h1>Добро пожаловать в ваш Домашний Кинотеатр!</h1>
+                    <p>Смотрите любимые фильмы и сериалы в высоком качестве.</p>
+                    <a href="#movies" class="button">Начать просмотр</a>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section id="movies" class="featured-movies">
+            <h2>Популярные фильмы</h2>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="/images/1.jpeg" alt="Слово пацана">
+                    <h3>Слово пацана</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/images/2.jpg" alt="Tom Wilkinson">
+                    <h3>Tom Wilkinson</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/images/3.jpg" alt="Шерлок Холмс">
+                    <h3>Шерлок Холмс</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/images/4.jpg" alt="Оборотень">
+                    <h3>Оборотень</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                <div class="movie-card">
+                    <img src="/images/5.jpg" alt="Топи">
+                    <h3>Топи</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                 <div class="movie-card">
+                    <img src="/images/6.webp" alt="Ухожу красиво">
+                    <h3>Ухожу красиво</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                 <div class="movie-card">
+                    <img src="/images/7.webp" alt="Мажор">
+                    <h3>Мажор</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                 <div class="movie-card">
+                    <img src="/images/8.jpg" alt="Путешествия во времени">
+                    <h3>Путешествия во времени</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                 <div class="movie-card">
+                    <img src="/images/9.jpg" alt="Бригада">
+                    <h3>Бригада</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+				<div class="movie-card">
+                    <img src="/images/10.webp" alt="Быть человеком">
+                    <h3>Быть человеком</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                <!-- Добавьте больше карточек фильмов -->
+            </div>
+        </section>
+
+        <section class="featured-series">
+            <h2>Популярные сериалы</h2>
+            <div class="series-grid">
+                <div class="series-card">
+                    <img src="/images/11.webp" alt="Метод">
+                    <h3>Метод</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                <div class="series-card">
+                    <img src="/images/12.jpg" alt="Рэкетир 2">
+                    <h3>Рэкетир 2</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+				<div class="series-grid">
+                <div class="series-card">
+                    <img src="/images/13.png" alt="Игра">
+                    <h3>Игра</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                <div class="series-card">
+                    <img src="/images/14.jpeg" alt="Духless">
+                    <h3>Духless</h3>
+                    <a href="#" class="button">Смотреть</a>
+                </div>
+                <!-- Добавьте больше карточек сериалов -->
+            </div>
+        </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Домашний Кинотеатр. Все права защищены.</p>
+        </footer>
+
+    </div>
+
+    <script src="js/images1.js"></script>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainMenu = document.querySelector('.main-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mainMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

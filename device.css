@@ -1,0 +1,86 @@
+/* Стили main-top */
+
+/* Для маленьких экранов (до 1070px) */
+@media (max-width: 1070px) {
+    .main-top {
+        padding: 15px; /* Уменьшаем отступы */
+    }
+
+    .logo {
+        font-size: 1.5em; /* Уменьшаем размер логотипа */
+    }
+
+    /* Отображаем меню-бургер */
+    .menu-toggle {
+        display: block;
+        margin-left: auto; /* Прижимаем к правому краю */
+    }
+
+    /* Скрываем основное меню */
+    .main-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;       /* Размещаем под шапкой */
+        right: 0;       /* Выравниваем по правому краю */
+        width: 200px;      /* Задаем ширину меню */
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Стили для элементов меню в бургер-меню */
+    .main-menu-item {
+        margin-bottom: 5px;
+    }
+
+    .main-menu-item a {
+        margin-left: 0;
+        font-size: 1.1rem;
+        padding: 10px;
+        display: block;
+    }
+
+    /* Класс для отображения меню при клике на бургер */
+    .main-menu.active {
+        display: flex;
+    }
+}
+
+
+
+/* header */
+/* Для маленьких экранов (телефоны) */
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 20px; /* Уменьшаем отступы */
+        height: 60vh; /* Увеличиваем высоту на маленьких экранах */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Уменьшаем размер заголовка */
+    }
+
+    .hero p {
+        font-size: 1.2em; /* Уменьшаем размер параграфа */
+    }
+}
+
+/* Для средних экранов (планшеты) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .hero {
+        height: 55vh; /* Немного увеличиваем высоту */
+    }
+
+    .hero h1 {
+        font-size: 3em; /* Чуть уменьшаем размер заголовка */
+    }
+}
+
+/* Для больших экранов (десктопы) */
+@media (min-width: 993px) {
+    .hero {
+        height: 50vh; /* Оставляем высоту как есть */
+    }
+}
